@@ -195,6 +195,102 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* skills */
+ .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+  .container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .progress2 {
+    border-radius: 30px;
+    background-color: #fff;
+  }
+  
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  
+  .progress-moved .progress-bar2 {
+    background-color: var(--main-color);
+    animation: progress 5s infinite;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+      background: #f9bcca;
+    }
+  
+    100% {
+      width: var(--progress-width, 75%);
+      background: var(--main-color);
+      box-shadow: 0 0 40px var(--main-color);
+    }
+  }
+  
+  .icon {
+    color: var(--main-color);
+    animation: icon 5s infinite;
+    background-color: transparent;
+    padding-right: 100%;
+    padding-bottom: 5px;
+    font-size: large;
+  }
+  
+  @keyframes icon {
+    0% {
+      opacity: 0.1;
+      text-shadow: 0 0 0 var(--main-color);
+    }
+  
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 10px var(--main-color);
+    }
+  }
+  
+  .loader {
+    --p: 0;
+    animation: p 5s steps(100) infinite;
+    counter-reset: p var(--p);
+    font-size: 2.1em;
+    position: absolute;
+    bottom: 20px;
+    left: 93%;
+    
+    color: var(--main-color);
+  }
+  
+  #html-progress-section .progress-bar2 {
+    --progress-width: 75%;
+  }
+  
+  #css-progress-section .progress-bar2 {
+    --progress-width: 60%;
+  }
+
+
+  
+
+
+  
+
+ 
+
+
+
+
 .services h2 {
     margin-bottom: 5rem;
 
@@ -338,6 +434,11 @@ span {
     background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0
+}
+
+#send{
+    display: flex;
+    justify-content: center;
 }
 
 .contact form .input-box input {
