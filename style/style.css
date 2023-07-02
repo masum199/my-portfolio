@@ -235,7 +235,7 @@ span {
     100% {
       width: var(--progress-width, 75%);
       background: var(--main-color);
-      box-shadow: 0 0 40px var(--main-color);
+      box-shadow: 0 0 10px var(--main-color);
     }
   }
   
@@ -264,7 +264,7 @@ span {
     --p: 0;
     animation: p 5s steps(100) infinite;
     counter-reset: p var(--p);
-    font-size: 2.1em;
+    font-size: 1.5rem;
     position: absolute;
     bottom: 20px;
     left: 93%;
@@ -273,17 +273,85 @@ span {
   }
   
   #html-progress-section .progress-bar2 {
-    --progress-width: 75%;
+    --progress-width: 90%;
   }
   
   #css-progress-section .progress-bar2 {
-    --progress-width: 60%;
+    --progress-width: 85%;
   }
+  #javascript-progress-section .progress-bar2 {
+    --progress-width: 75%;
+  }
+  #react-progress-section .progress-bar2 {
+    --progress-width: 70%;
+  }
+  #expressjs-progress-section .progress-bar2 {
+    --progress-width: 40%;
+  }
+  #nodejs-progress-section .progress-bar2 {
+    --progress-width: 5%;
+  }
+  
 
 
   
 
-
+  @import url("https://fonts.googleapis.com/css?family=Lato:300");
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato";
+    font-size: 16px;
+  }
+  
+  /*** <--- CIRCLE STYLES ---> ***/
+  .wrap-circles {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background: #323946;
+    overflow: hidden;
+  }
+  .circle.per-25 {
+    background-image: conic-gradient(#0ef 85%, #323946 0);
+  }
+  .circle.per-50 {
+    background-image: conic-gradient(#0ef 75%, #323946 0);
+  }
+  .circle.per-75 {
+    background-image: conic-gradient(#0ef 60%, #323946 0);
+  }
+  .circle.per-95 {
+    background-image: conic-gradient(#0ef 95%, #323946 0);
+  }
+  .circle .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115px;
+    height: 115px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    font-size: 1.85em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+  }
   
 
  
