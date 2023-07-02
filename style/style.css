@@ -253,7 +253,7 @@ span {
     gap: 10px;
   }
 
-  .bx{
+  .skills .bx{
     font-size: 40px ;
   }
   
@@ -290,18 +290,27 @@ span {
   }
   #javascript-progress-section .progress-bar2 {
     --progress-width: 75%;
+    ---background: #F7DF1E;
   }
   #react-progress-section .progress-bar2 {
     --progress-width: 70%;
+    ---background: #61DAFB;
   }
   #expressjs-progress-section .progress-bar2 {
     --progress-width: 40%;
+    ---background:  #A9A9A9;
   }
   #nodejs-progress-section .progress-bar2 {
     --progress-width: 5%;
+    ---background: #228B22;
   }
-  #frameworks-progress-section .progress-bar2 {
+  #tailwind-progress-section .progress-bar2 {
+    --progress-width: 90%;
+    ---background: #38B2AC;
+  }
+  #bootstrap-progress-section .progress-bar2 {
     --progress-width: 85%;
+    ---background: #7952B3;
   }
   
 
@@ -328,7 +337,8 @@ span {
  .circle-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
+    grid-gap: 70px;
+    row-gap: 150px;
  }
 
  .outer{
@@ -647,10 +657,22 @@ span {
     .footer {
         padding: 2rem 3%;
     }
+
+    .container p{
+        gap: 150px !important;
+     }
+     .skills {
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .wid{
+        width: 100% !important;
+     }
 }
 
    
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #menu-icon {
         display: block;
     }
@@ -714,6 +736,18 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .container p{
+        gap: 100px !important;
+     }
+     .skills {
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .wid{
+        width: 100% !important;
+     }
 }
 
 @media (max-width: 617px) {
@@ -728,6 +762,10 @@ span {
      .wid{
         width: 100% !important;
      }
+     .container p{
+        gap: 50px !important;
+     }
+     
 }
 
 @media (max-width: 450px){
@@ -773,10 +811,17 @@ span {
     .skills {
         display: flex;
         flex-direction: column;
-       
      }
      .wid{
         width: 100% !important;
      }
+     .circle-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: opx;
+        row-gap: 60px;
+       
+     }
+
 }
     
