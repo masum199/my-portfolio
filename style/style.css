@@ -198,7 +198,7 @@ span {
 /* skills */
  .skills {
     display: flex;
-    align-items: center;
+    
     justify-content: space-between;
  }
 
@@ -210,13 +210,13 @@ span {
   }
   
   .progress2 {
-    border-radius: 30px;
+  
     background-color: #fff;
   }
   
   .progress-bar2 {
-    height: 18px;
-    border-radius: 30px;
+    height: 10px;
+    
     transition: 0.4s linear;
     transition-property: width, background-color;
   }
@@ -229,55 +229,64 @@ span {
   @keyframes progress {
     0% {
       width: 0%;
-      background: #f9bcca;
+      background: #050505;
     }
   
     100% {
       width: var(--progress-width, 75%);
-      background: var(--main-color);
-      box-shadow: 0 0 10px var(--main-color);
+      background: var(---background);
+     
     }
   }
   
   .icon {
-    color: var(--main-color);
     animation: icon 5s infinite;
     background-color: transparent;
     padding-right: 100%;
     padding-bottom: 5px;
-    font-size: large;
+
   }
+
+  .frame{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bx{
+    font-size: 40px ;
+  }
+  
   
   @keyframes icon {
     0% {
       opacity: 0.1;
-      text-shadow: 0 0 0 var(--main-color);
+    
     }
   
     100% {
       opacity: 1;
-      text-shadow: 0 0 10px var(--main-color);
+     
     }
   }
   
   .loader {
     --p: 0;
-    animation: p 5s steps(100) infinite;
-    counter-reset: p var(--p);
+    animation: icon 5s infinite;
     font-size: 1.5rem;
     position: absolute;
     bottom: 20px;
     left: 93%;
-    
-    color: var(--main-color);
   }
   
   #html-progress-section .progress-bar2 {
     --progress-width: 90%;
+    ---background: #E34F26;
   }
   
   #css-progress-section .progress-bar2 {
     --progress-width: 85%;
+    ---background: #1572B6;
   }
   #javascript-progress-section .progress-bar2 {
     --progress-width: 75%;
@@ -291,72 +300,124 @@ span {
   #nodejs-progress-section .progress-bar2 {
     --progress-width: 5%;
   }
-  
-
-
-  
-
-  @import url("https://fonts.googleapis.com/css?family=Lato:300");
-  *, *::before, *::after {
-    box-sizing: border-box;
+  #frameworks-progress-section .progress-bar2 {
+    --progress-width: 85%;
   }
   
-  body {
-    font-family: "Lato";
-    font-size: 16px;
-  }
+
+
+  
+
+  
+ 
   
   /*** <--- CIRCLE STYLES ---> ***/
-  .wrap-circles {
+  .number{
+    font-size: 20px;
+  }
+
+ .skill{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+ }
+
+
+
+ .circle-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-  }
-  
-  .circle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 0.5rem;
+    grid-gap: 50px;
+ }
+
+ .outer{
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
-    background: #323946;
-    overflow: hidden;
-  }
-  .circle.per-25 {
-    background-image: conic-gradient(#0ef 85%, #323946 0);
-  }
-  .circle.per-50 {
-    background-image: conic-gradient(#0ef 75%, #323946 0);
-  }
-  .circle.per-75 {
-    background-image: conic-gradient(#0ef 60%, #323946 0);
-  }
-  .circle.per-95 {
-    background-image: conic-gradient(#0ef 95%, #323946 0);
-  }
-  .circle .inner {
+    padding: 20px;
+ }
+
+ .inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgb(0, 0, 0),
+                inset -4px -4px 6px -1px rgb(6, 6, 6),
+                -0.5px -0.5px 0px rgb(5, 5, 5),
+                0.5px 0.5px 0px rgb(0, 0, 0),
+                0px 12px 10px -10px rgb(0, 0, 0);
+ }
+
+ #number{
+    font-weight: 600;
+    color: #555;
+ }
+
+ circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+   stroke-dasharray: 472;
+   stroke-dashoffset: 472;
+   animation: anim 5s infinite;
+ }
+ #teamwork-circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+   stroke-dasharray: 472;
+   stroke-dashoffset: 472;
+   animation: team 5s infinite;
+ }
+ #project-circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+   stroke-dasharray: 472;
+   stroke-dashoffset: 472;
+   animation: project 5s infinite;
+ }
+ #creativity-circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+   stroke-dasharray: 472;
+   stroke-dashoffset: 472;
+   animation: creativity 5s infinite;
+ }
+
+ svg{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 115px;
-    height: 115px;
-    background: var(--bg-color);
-    border-radius: 50%;
-    font-size: 1.85em;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.75);
-  }
-  
+    top: 0;
+    left: 0;
+ }
+
+ @keyframes anim {
+    100%{
+        stroke-dashoffset: 100;
+    }
+ }
+ @keyframes team {
+    100%{
+        stroke-dashoffset: 130;
+    }
+ }
+ @keyframes project {
+    100%{
+        stroke-dashoffset: 160;
+    }
+ }
+ @keyframes creativity {
+    100%{
+        stroke-dashoffset: 200;
+    }
+ }
 
  
-
-
 
 
 .services h2 {
@@ -659,6 +720,14 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+    .skills {
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .wid{
+        width: 100% !important;
+     }
 }
 
 @media (max-width: 450px){
@@ -669,6 +738,19 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+    .skills {
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .wid{
+        width: 100% !important;
+     }
+     .circle-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+     }
 }
 
 @media (max-width: 365px) {
@@ -688,5 +770,13 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+    .skills {
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .wid{
+        width: 100% !important;
+     }
 }
     

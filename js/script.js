@@ -60,3 +60,58 @@ const typed = new Typed('.multiple-text', {
 })
 
 // send email
+// Communication
+let communicationNumber = document.getElementById('communication-number');
+let communicationCircle = document.getElementById('communication-circle');
+let communicationCounter = 0;
+setInterval(() => {
+    if (communicationCounter === 90) {
+        clearInterval();
+    } else {
+        communicationCounter += 1;
+        communicationNumber.innerHTML = communicationCounter + "%";
+       
+    }
+}, 50);
+
+// Team Work
+let teamworkNumber = document.getElementById('teamwork-number');
+let teamworkCircle = document.getElementById('teamwork-circle');
+let teamworkCounter = 0;
+setInterval(() => {
+    if (teamworkCounter === 80) {
+        clearInterval();
+    } else {
+        teamworkCounter += 1;
+        teamworkNumber.innerHTML = teamworkCounter + "%";
+       
+    }
+}, 50);
+
+// Project Management
+let projectNumber = document.getElementById('project-number');
+let projectCircle = document.getElementById('project-circle');
+let projectCounter = 0;
+setInterval(() => {
+    if (projectCounter === 75) {
+        clearInterval();
+    } else {
+        projectCounter += 1;
+        projectNumber.innerHTML = projectCounter + "%";
+    
+    }
+}, 50);
+
+// Creativity
+let creativityNumber = document.getElementById('creativity-number');
+let creativityCircle = document.getElementById('creativity-circle');
+let creativityCounter = 0;
+setInterval(() => {
+    if (creativityCounter === 70) {
+        clearInterval();
+    } else {
+        creativityCounter += 1;
+        creativityNumber.innerHTML = creativityCounter + "%";
+      
+    }
+}, 50);

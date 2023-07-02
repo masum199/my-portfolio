@@ -72,21 +72,22 @@
     </section>
     <!-- skills -->
     <section class="skills" id="skills">
-        <div style="width: 50%;">
-            <div style="text-align: center; font-size: 20px;">
+        <div class="wid" style="width: 50%;">
+            <div style="text-align: center; font-size: 20px; margin-bottom: 45px;">
                 <h2 class="heading">Technical <span>Skills</span></h2>
             </div>
             <div class="container" id="html-progress-section">
-                <p class="TEXT icon">HTML</p>
+               
+                <p style="color: #E34F26; font-size: 20px; display: flex; align-items: center; justify-content: space-between; gap: 250px;" class="TEXT icon "><i class='bx bxl-html5 '></i> HTML5</p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
-                    <div class="loader" style="--n: 1; --f: 0;">90%</div>
+                    <div class="loader" style="--n: 1; --f: 0; color: #E34F26;">90%</div>
                 </div>
             </div>
 
 
             <div class="container" id="css-progress-section">
-                <p class="TEXT icon">CSS</p>
+                <p style="color: #1572B6; font-size: 20px; display: flex; align-items: center; justify-content: space-between; gap: 250px;" class="TEXT icon"><i class='bx bxl-css3'></i>CSS3</p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
                     <div class="loader" style="--n: 1; --f: 0;">85%</div>
@@ -94,7 +95,7 @@
             </div>
 
             <div class="container" id="javascript-progress-section">
-                <p class="TEXT icon">Javascript</p>
+                <p class="TEXT icon"><i class='bx bxl-javascript' ></i></p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
                     <div class="loader" style="--n: 1; --f: 0;">75%</div>
@@ -102,7 +103,7 @@
             </div>
 
             <div class="container" id="react-progress-section">
-                <p class="TEXT icon">React</p>
+                <p class="TEXT icon"><i class='bx bxl-react' ></i></p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
                     <div class="loader" style="--n: 1; --f: 0;">70%</div>
@@ -110,7 +111,7 @@
             </div>
 
             <div class="container" id="expressjs-progress-section">
-                <p class="TEXT icon">ExpressJs</p>
+                <p class="TEXT icon"><i class='bx bxs-file-js' ></i></p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
                     <div class="loader" style="--n: 1; --f: 0;">40%</div>
@@ -118,46 +119,101 @@
             </div>
 
             <div class="container" id="nodejs-progress-section">
-                <p class="TEXT icon">NodeJs</p>
+                <p class="TEXT icon"><i class='bx bxl-nodejs'></i></p>
                 <div class="progress2 progress-moved">
                     <div class="progress-bar2"></div>
                     <div class="loader" style="--n: 1; --f: 0;">5%</div>
                 </div>
             </div>
-        </div>
-
-
-        <div style="width: 50%;" class="professional">
-            <div style="text-align: center;">
-                <h2 class="heading">Professional <span>skills</span></h2>
+            <div class="container" id="frameworks-progress-section">
+                <p class="TEXT icon frame"><i class='bx bxl-tailwind-css' ></i>&&<i class='bx bxl-bootstrap' ></i></p>
+                <div class="progress2 progress-moved">
+                    <div class="progress-bar2"></div>
+                    <div class="loader" style="--n: 1; --f: 0;">85%</div>
+                </div>
             </div>
-            <div class="wrap-circles">
-                <div>
-                    <div class="circle per-95">
-                        <div class="inner">95%</div>
-                      </div>
-                      <p>Communication</p>
-                </div>
-               <div>
-                <div class="circle per-25">
-                    <div class="inner">85%</div>
-                  </div>
-                  <p>Team Work</p>
-               </div>
-                <div>
-                    <div class="circle per-50">
-                        <div class="inner">75%</div>
-                      </div>
-                      <p>Project Management</p>
-                </div>
-               <div>
-                <div class="circle per-75">
-                    <div class="inner">60%</div>
-                  </div>
-                  <p>Creativity</p>
-               </div>
-              </div>
         </div>
+        <!-- circle -->
+        <div>
+            <div style="margin-bottom: 70px;">
+                <h2 class="heading">Professional <span>Skills</span></h2>
+            </div>
+            <div class="circle-grid">
+                <div class="skill">
+                    <div class="outer">
+                      <div class="inner">
+                        <div id="communication-number" class="number"></div>
+                      </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                      <defs>
+                        <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#0ef" />
+                          <stop offset="100%" stop-color="#0ef" />
+                        </linearGradient>
+                      </defs>
+                      <circle id="communication-circle" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                    </svg>
+                    <h3 style="text-align: center; padding: 20px;">Communication</h3>
+                  </div>
+                  
+    
+                  <div class="skill">
+                    <div class="outer">
+                      <div class="inner">
+                        <div id="teamwork-number" class="number"></div>
+                      </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                      <defs>
+                        <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                      </defs>
+                      <circle id="teamwork-circle" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                    </svg>
+                    <h3 style="text-align: center; padding: 20px;">Team Work</h3>
+                  </div>
+    
+                  <div class="skill">
+                    <div class="outer">
+                      <div class="inner">
+                        <div id="project-number" class="number"></div>
+                      </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                      <defs>
+                        <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                      </defs>
+                      <circle id="project-circle" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                    </svg>
+                    <h3 style="text-align: center; padding-top: 20px;">Project Management</h3>
+                  </div>
+    
+                  <div class="skill">
+                    <div class="outer">
+                      <div class="inner">
+                        <div id="creativity-number" class="number"></div>
+                      </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                      <defs>
+                        <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                      </defs>
+                      <circle id="creativity-circle" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                    </svg>
+                    <h3 style="text-align: center; padding: 20px;">Creativity</h3>
+                  </div>
+            </div>
+        </div>
+        
     </section>
     <!-- services -->
     <section class="services" id="services">
@@ -289,7 +345,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!-- custom js -->
     <script src="js/script.js"></script>
     <!-- smtp -->
